@@ -68,7 +68,6 @@ public class RedisDao {
 			String result = jedis.setex(key.getBytes(), timeout , bytes);
 			return result;
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally {
 			if(jedis!=null){
